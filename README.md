@@ -2,7 +2,7 @@
 
 Oh-my-zsh theme inspired by a bash prompt of the same name originally created by user Graawr on http://dotshare.it
 
-![alt tag](https://raw.githubusercontent.com/pr0tocol/classyTouch_oh-my-zsh/master/classyTouch.png)
+![classyTouch](https://raw.githubusercontent.com/pr0tocol/classyTouch_oh-my-zsh/master/classyTouch.png)
 
 ## Installation
 
