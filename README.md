@@ -14,6 +14,6 @@ Or you can download the .zip file directly, extract it and place the classyTouch
 
 After you have placed the file in the aforementioned directory, just edit your `.zshrc` file andchange the `ZSH_THEME` to `classyTouch`
 
-Note: The font used in the screenshot is named _ohsnap_ and can be downloaded here: https://sourceforge.net/projects/osnapfont
+**Note:** The font used in the screenshot is named _ohsnap_ and can be downloaded here: https://sourceforge.net/projects/osnapfont
 
 If you run into any issues or have any questions or concerns, feel free to let me know.
