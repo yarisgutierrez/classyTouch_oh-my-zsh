@@ -15,17 +15,19 @@ eval grey=$fg[grey]
 local current_dir='%{$fg[red]%}[%{$reset_color%}%~% %{$fg[red]%}]%{$reset_color%}'
 local git_branch='$(git_prompt_info) $(git_prompt_status)%{$reset_color%}'
 
-PROMPT="%(?,%{$red%}┌─╼${current_dir}%{$reset_color%} ${git_branch}
-%{$red%}└────╼%{$reset_color%} ,%{$red%}┌─╼${current_dir}%{$reset_color%} ${git_branch}
+PROMPT="
+%(?,%{$red%}┌─╼${current_dir}%{$reset_color%}${git_branch}
+%{$red%}└────╼%{$reset_color%} ,%{$red%}┌─╼${current_dir}%{$reset_color%}${git_branch}
 %{$red%}└╼ %{$reset_color%} "
 
-RPROMPT="%(?,%{$red%}┌─╼${current_dir}%{$reset_color%} $(git_prompt_info) ${git_branch}
-%{$red%}└────╼%{$reset_color%} ,%{$red%}┌─╼${current_dir}%{$reset_color%} ${git_branch}
+RPROMPT="
+%(?,%{$red%}┌─╼${current_dir}%{$reset_color%} $(git_prompt_info)${git_branch}
+%{$red%}└────╼%{$reset_color%} ,%{$red%}┌─╼${current_dir}%{$reset_color%}${git_branch}
 %{$red%}└╼ %{$reset_color%} "
 
 # git_prompt_info
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$red%}╾─╼ %{$fg_bold[magenta]%}[ %{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_bold[magenta]%} ]%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$red%}╾─╼%{$fg_bold[red]%}[ %{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_bold[red]%} ]%{$reset_color%}"
 
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%} ⍜%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%} ○%{$reset_color%}"
