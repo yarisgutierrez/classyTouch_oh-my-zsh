@@ -27,8 +27,8 @@ RPROMPT="%(?,%{$red%}┌─╼${current_dir}%{$reset_color%} $(git_prompt_info) 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$red%}╾─╼ %{$fg_bold[magenta]%}[ %{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_bold[magenta]%} ]%{$reset_color%}"
 
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$red%} ··%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$green%} ·%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%} ⍜%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%} ○%{$reset_color%}"
 
 # git_prompt_status
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg_bold[green]%}+%{$reset_color%}"
